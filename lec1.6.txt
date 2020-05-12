@@ -1,0 +1,44 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+myarr= [1,1,5,'raj',6,7];
+var c= 0;
+console.log(typeof myarr[2]);
+
+for(i=0; i <myarr.length; i++){  
+  //console.log(typeof myarr[i]);
+  console.log('before continue count '+c);
+  if(typeof myarr[i] == 'string'){
+    continue;
+    console.log('inside continue count '+c);
+    //c++;
+  }else{
+    c++;    
+  }
+  console.log('inside count '+c);
+}
+console.log('total count '+c);
+
+
+/*
+for(i=0; i <myarr.length; i++){  
+  //console.log(typeof myarr[i]);
+  if(typeof myarr[i] == 'string'){
+    break;
+  }else{
+    c++;    
+  }
+}
+console.log('total count '+c);
+*/
+
+
+
+
+

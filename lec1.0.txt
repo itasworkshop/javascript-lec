@@ -1,0 +1,29 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+console.log('hello world');
+
+var x;
+
+x = 10;
+
+x = "new name";
+
+x = false;
+
+var x= [1,'Bob','Steve',10];
+
+var x = {1:'ram', 
+         2:[1,2,3,4], 
+         ids:{11:'w',12:'13'}
+        };
+
+console.log(x);
+console.log(typeof x);
+

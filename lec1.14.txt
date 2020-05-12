@@ -1,0 +1,50 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ 
+
+var person1 = {
+  name:{fname:'raj',lname:'singh'},
+  age:22,
+  branch:['cs','ee','ec'] ,
+  
+  info: function(x){
+    console.log(this.name.fname+' '+(this.age+x)+' '+this.branch);
+    return this.name.fname;
+  }
+};
+
+
+console.log(person1.name.fname);
+console.log(person1.branch[0]);
+//block notation
+console.log(person1['age']);
+console.log(person1['name']['fname']);
+console.log(person1['branch']);
+*/
+var person2 = {
+  name:{fname:'raj',lname:'singh'},
+  age:22,
+  branch:['cs','ee','ec'] ,
+  
+  info: function(x){
+    console.log(this.name.fname+' '+(this.age+x)+' '+this.branch);
+    return this.name.fname;
+  }
+};
+
+person2.address = 'Bangalore';
+person2.name.fname = 'suraj';
+
+person2.newinfo = function(){console.log(this.address);return this.address;}
+
+console.log(person2.name.fname);
+console.log(person2.address);
+
+person2.newinfo();
+
+

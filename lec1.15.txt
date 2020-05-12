@@ -1,0 +1,106 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+//OOPS in javascript
+//1. simple function
+/*
+function createMyUser(name){
+  const obj = {};
+  obj.name = name;
+  obj.info = function(){
+    console.log("hey hi there. "+obj.name);
+  };
+  return obj;
+}
+
+var user1 = createMyUser('rajesh');
+console.log(user1.name);
+console.log(typeof user1);
+user1.info();
+
+//2. constructor function - js version of classes
+function User(name){
+  this.name = name;
+  this.info = function(){
+    console.log("hey hi there. "+this.name);
+  };
+}
+
+var user1 = new User('rajesh');
+console.log(user1.name);
+console.log(typeof user1);
+user1.info();
+
+var user2 = new User('suraj');
+console.log(typeof user2);
+console.log(user1.name);
+user1.info();
+*/
+//3. Using Object() constructor     
+ 
+var user1 = new Object();
+user1.name = 'tom';
+user1.info = function(){
+    console.log("hey hi there. "+this.name);
+  };
+  
+var user1 = new Object(
+  {
+  name: 'tom',
+  info: function(){
+    console.log("hey hi there. "+this.name);
+    } 
+  }
+);
+
+console.log(user1.name);
+console.log(typeof user1);
+user1.info();
+
+//4. using Object.create() method
+//old browser does not support IE8
+var user2 = Object.create(user1);
+user2.name = 'tommy';
+user2.info = function(){
+    console.log("hey how r u. "+this.name);
+  };
+
+console.log(user2.name);
+console.log(typeof user2);
+user2.info();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Exception: SyntaxError: missing : after property id
+@Scratchpad/2:54
+*/
+/*
+Exception: SyntaxError: missing : after property id
+@Scratchpad/2:54
+*/
+/*
+Exception: TypeError: Object.create is not a constructor
+@Scratchpad/2:67:13
+*/

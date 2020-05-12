@@ -1,0 +1,49 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+var x = 25;
+var y = 20;
+
+//console.log(10+5);
+//console.log(x+y);
+
+//console.log("ram"+"singh");
+
+//console.log("ramesh"+5);
+
+//console.log(5+"ramesh");
+/*
+console.log(5+'5');
+console.log(5*'5');
+
+console.log('5'+5);
+console.log('5'*5);
+
+console.log(5+'raj');
+console.log(5*'raj');
+
+console.log('raj'+5);
+console.log('raj'*5);
+
+console.log(isNaN('5'));
+*/
+
+var x = '10';
+
+console.log(x);
+
+console.log(x==10);
+
+console.log(x===10);
+
+
+
+
+
+

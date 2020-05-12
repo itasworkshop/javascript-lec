@@ -1,0 +1,70 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+/*function expression
+const addition2 = function add(x,y){
+  return x+y;
+}
+
+const addition2 = function(x,y){
+  return x+y;
+}
+
+var x = addition2(5,8);
+
+console.log(x); //13
+
+//calling itself
+
+const ff = function fact(n){
+  return n < 2 ? 1 : n * fact(n-1);
+}
+
+console.log(ff(5));
+
+
+
+//in scope function can be called before declaration
+//hoisting?
+console.log(x(5));
+
+function x(n){return n*n;}
+
+*/
+//hoisting does not work with function expression.
+console.log(x3);
+//console.log(x1(5));
+
+const x3 = function(n){return n*n;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Exception: ReferenceError: can't access lexical declaration `x1' before initialization
+@Scratchpad/2:41:1
+*/
+/*
+Exception: ReferenceError: can't access lexical declaration `x2' before initialization
+@Scratchpad/2:41:1
+*/
+/*
+Exception: ReferenceError: can't access lexical declaration `x3' before initialization
+@Scratchpad/2:41:1
+*/

@@ -1,0 +1,35 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+function add(a,b){
+  console.log(a+b);
+}
+
+function add1(a,b){
+  return a+b;
+}
+
+function add2(b = 10,a){
+  return a+b;
+}
+
+function add3(a,b){
+  return (
+  a+b
+  );
+}
+
+
+//add(10,15)
+//console.log(add1(10,15)+100);
+//console.log(add2(10,15));
+//console.log(add2(10));
+//console.log(add3(10,15));
+
+

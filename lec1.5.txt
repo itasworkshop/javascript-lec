@@ -1,0 +1,80 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+var name = "ravi"
+
+name = 50
+
+name = true 
+name = false
+
+name = [10, "ravi", false, [2,3,4]]
+console.log("hello world"+ name)
+
+console.log(2+5)
+console.log("ravi"+"sahrma")
+
+console.log(5+ "ravi")
+console.log("ravi" + 5)
+
+console.log(5!=='5')
+
+name= "ravi"
+if(name== "ravi"){
+  console.log("is equal")
+}else{
+  console.log("not equal")
+}
+
+
+
+function add(x,y){
+  var result = x+y
+  alert(result)
+}
+
+add(20,45)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

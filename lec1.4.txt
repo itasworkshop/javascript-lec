@@ -1,0 +1,61 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+var a = '5';
+var b = 't';
+
+//console.log(parseInt(a));
+//console.log(parseInt(b));
+
+//console.log(typeof parseInt(a));
+//console.log(typeof parseInt(b));
+
+var myarr = [1,2,'raj',false];
+
+/*
+console.log(myarr);
+
+var i = 0;
+while(i<myarr.length){
+  console.log(myarr[i]);
+  i++;
+}
+
+
+var j = 5;
+do{
+  console.log("from output",myarr[j]);
+  j++;
+}while(j<myarr.length)
+*/
+
+
+var myarr1 = [];
+
+myarr1[0] = 111;
+myarr1[4] = 222;
+
+console.log("from output",myarr1.length);
+console.log("from output",myarr1);
+console.log("from output",myarr1[2]);
+console.log("from output",typeof myarr1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

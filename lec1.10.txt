@@ -1,0 +1,21 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+//arrow function
+//(exp1,exp2,...) => {exp}
+myarray1 = [1,2,3,4,5];
+myarray2 = ['raj','rajesh','suraj','john'];
+
+//console.log(myarray2.length);
+//console.log(myarray2.map(x => x.length**2));
+//console.log(myarray2.map((x) => {return (x.length)**2;}));
+//wap to add myarray1
+console.log(myarray1.map((i,j) => i+j));
+console.log(myarray1.reduce((i,j) => i+j)+5);
+console.log(myarray1.map((i) => i+i));

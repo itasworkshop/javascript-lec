@@ -1,0 +1,36 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+age = 200;
+
+function Person(){
+  this.age = 0;
+  setInterval(function grow(){
+    var rage = this.age++;
+    console.log(rage);
+  },1000);
+}
+
+var p = new Person();
+
+console.log(p);
+
+age = 200;
+
+function Person(){
+  this.age = 0;
+  setInterval(() => {
+    var rage = this.age++;
+    console.log(rage);
+  },1000);
+}
+
+var p = new Person();
+
+console.log(p);
