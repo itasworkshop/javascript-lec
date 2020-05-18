@@ -1,0 +1,46 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+//OOPs in js, inheritance using class
+//ECMAScript 2015
+
+class Person{
+  constructor(fname,lname,age){
+    this.fullname = {
+      fname,
+      lname
+    };
+    this.age = age;
+  }
+  info(){
+    console.log("this is "+this.fullname.fname + this.age);
+  };
+}
+
+var person2 = new Person("raj","singh",25);
+person2.info();
+
+class Teacher extends Person{
+  constructor(fname,lname,age,tskill){
+    super(fname,lname,age); //call to super constructor
+    this.tskill = tskill;
+  }
+}
+
+var teacher2 = new Teacher("rajesh","shah",28,"Math");
+teacher2.info();
+

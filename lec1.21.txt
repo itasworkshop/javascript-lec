@@ -1,0 +1,196 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+class Person4{
+  constructor(fname,lname,age){
+    this.fullname = {
+      fname,
+      lname
+    };
+    this.age = age;
+  }
+  info(){
+    console.log("this is "+this.fullname.fname + this.age);
+  };
+}
+
+var person2 = new Person4("raj","singh",25);
+person2.info();
+
+class Teacher4 extends Person4{
+  constructor(fname,lname,age,tskill){
+    super(fname,lname,age); //call to super constructor
+    //withou "_" (this.tskill), we get error, its convention to use this._tskil
+    this.tskill = tskill;
+  }
+  
+  //return current value of the variable
+  get tskill(){
+    console.log("from getter.");
+    return this.tskill;
+  }
+  
+  //changes the value of variable to the latest assigned one
+  set tskill(newtskill){
+    console.log("from setter.");
+    this.tskill = newtskill;
+  }
+}
+
+var teacher2 = new Teacher4("rajesh","shah",28,"Math");
+teacher2.info();
+
+var teacher3 = new Teacher4("rajesh","shah",28,"Eng");
+teacher3.info();
+//tskill(); no need to call explicitly
+teacher3.tskill = "Hist"; //automatically calls setter
+teacher3.tskill; //automatically calls getter
+
+
+
+/*
+Exception: InternalError: too much recursion
+set tskill@Scratchpad/1:48:1
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+set tskill@Scratchpad/1:50:5
+*/

@@ -1,0 +1,54 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+//inheriting features from another object
+//oops in js, prototype based oops in js- using pt of one object to create another object
+//protype object - template object
+
+function Person(fname,lname,age){
+  this.fullname = {
+    'fname':fname,
+    'lname':lname
+  };
+  this.age = age;
+}
+
+var person3 = new Person('raj','singh',25);
+var person4 = new Person('suraj','sharma',27);
+var person5 = new person3.constructor('suresh','shah',37);
+
+Person.prototype.info = function(){
+    console.log("from proto");
+};
+
+console.log(person3);
+person3.info();
+console.log(person4);
+person4.info();
+console.log(person5);
+person5.info();
+
+/*
+console.log(person1);
+
+person1 --> Person prototype --> Object prototype
+console.log(person1.valueOf()); // Object.valueOf()
+console.log(person1.prototype);
+console.log(Person.prototype);
+console.log(Object.prototype);
+
+
+console.log(person3.constructor);
+console.log(person3.age);
+console.log(person4.age);
+useful if original constructor is not available.
+var person4 = new person3.constructor('suraj','sharma',27);
+console.log(person3.age);
+console.log(person4.age);
+*/

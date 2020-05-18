@@ -1,0 +1,56 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+//OOPs in js, inheritance using prototype
+
+function Person(fname,lname,age){
+  this.fullname = {
+    fname,
+    lname
+  };
+  this.age = age
+};
+
+Person.prototype.info = function(){
+  console.log("this is "+this.fullname.fname + this.age);
+};
+
+var person1 = new Person("raj","singh",25);
+console.log(person1.info());
+
+//Teacher,Employee,Student etc all are person too.
+function Teacher(fname,lname,age,tskill){
+  Person.call(this,fname,lname,age);
+  
+  this.tskill = tskill;  
+};
+
+//setting teachers prototype
+Teacher.prototype = Object.create(Person.prototype);
+//setting constructor reference
+Teacher.prototype.constructor = Teacher;
+
+Teacher.prototype.info = function(){
+  console.log("this is "+this.fullname.fname + this.age + this.tskill);
+};
+
+var teacher1 = new Teacher("rajesh","shah",28,"Math");
+console.log(teacher1.fullname.fname);
+console.log(teacher1.tskill);
+console.log(teacher1.info());
+//console.log(Object.getOwnPropertyNames(Person.prototype));
+//console.log(Object.getOwnPropertyNames(Teacher.prototype));
+
+console.log(Person.prototype.info);
+console.log(Teacher.prototype.info);
+
+//console.log(Person.prototype.info());
+//console.log(Teacher.prototype.info());
+
+
