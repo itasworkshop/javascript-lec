@@ -1,0 +1,74 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+//JSON - text based data format following js object syntax
+//JSON - structured data 
+//{}
+//json file MIME tyep application/json
+//no methods in JSON, no single only double("")
+//can take form of any data type type
+
+var data = 'some data';
+var jsonobj = {
+  "name":"raj",
+  "age":25,
+  "address":[
+    {"city":"Delhi","state":"Delhi"},
+    {"city":"Bangaluru","state":"KA"}
+  ]
+};
+var myarray = [1,2,3,"t",false,"rajesh"];
+
+/*
+console.log(jsonobj.name);
+console.log(jsonobj["name"]);
+
+console.log(jsonobj.address[0].city);
+console.log(jsonobj.address[0].state);
+
+console.log(jsonobj["address"][1]["city"]);
+console.log(jsonobj["address"][1]["state"]);
+
+jsonobj["address"][1]["zip"] = 12345;
+console.log(jsonobj["address"][1]["zip"]);
+console.log(jsonobj);
+*/
+
+var myarray1 = [{
+  "name":"raj",
+  "age":25,
+  "address":[
+    {"city":"Delhi","state":"Delhi"},
+    {"city":"Bangaluru","state":"KA"}
+  ]
+},
+               {
+  "name":"rajesh",
+  "age":28,
+  "address":[
+    {"city":"Mumbai","state":"MH"},
+    {"city":"Chennai","state":"TN"}
+  ]
+}];
+
+//console.log(myarray1);
+//console.log(myarray1[1].address[1].city);
+
+var tweet = require('./twitter_data.json');
+console.log(tweet);
+
+
+
+
+
+
+
+
+
+
