@@ -2,14 +2,24 @@
 <html>
     <head>
         <title>JSON Example</title>
+        
     </head>
-    <body>Test JSON Example!</body>
+    <body>Test JSON Example!
+        <header></header>
+        <section></section>
+
+    </body>
 
     <script>
         //var tweet = require('twitter_data.json');
         //var response = fetch('https://data.cityofnewyork.us/data.json').then(response => response.json()).then(json => console.log(json));
         
-        var url = 'https://data.cityofnewyork.us/data.json';
+        const header = document.querySelector('header');
+        const section = document.querySelector('section');
+
+        //var url = 'https://data.cityofnewyork.us/data.json';
+        var url = 'http://cors.io/?https://github.com/cben/sandbox/blob/master/json/index.json';
+
         var request = new XMLHttpRequest(); //used to interact with server for fetching data
         request.open('GET',url);
         request.responseType = 'json';
@@ -22,8 +32,19 @@
         //callback is executed once transaction completes
         request.onload = function(){
             var data = request.response;
-            console.log(data["dataset"]);
-            console.log(data);
+            console.log(data["dataset"][0].description);
+            console.log(data["dataset"][0]);
+            populateData(data);
+        }
+
+        function populateData(jsonObj){
+            const heading = document.createElement('h1');
+            heading.textContent = jsonObj["dataset"][0].theme;
+            header.appendChild(heading);
+
+            const para = document.createElement('p');
+            para.textContent = jsonObj["dataset"][0].description;
+            header.appendChild(para);
         }
     </script>
 </html>
